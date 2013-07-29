@@ -9,7 +9,7 @@ use URI::Template;
 
 use Net::PostcodeNL::WebshopAPI::Response;
 
-our $VERSION = '0.2';
+our $VERSION = '0.2.0';
 
 my $AGENT = __PACKAGE__ . '/' . $VERSION;
 
@@ -114,6 +114,6 @@ Peter Stuifzand <peter@stuifzand.eu>
 
 =head1 LICENSE
 
-GPL version 3 or later.
+Same as Perl.
 
 =cut

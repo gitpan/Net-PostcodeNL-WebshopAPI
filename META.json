@@ -3,8 +3,8 @@
    "author" : [
       "Peter Stuifzand <peter@stuifzand.eu>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Milla version v0.9.7, Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -13,36 +13,40 @@
       "version" : "2"
    },
    "name" : "Net-PostcodeNL-WebshopAPI",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
+      ]
+   },
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "Module::Build::Tiny" : "0.025"
          }
       },
-      "runtime" : {
+      "develop" : {
          "requires" : {
-            "JSON::XS" : "2.33",
-            "LWP::UserAgent" : "6.04",
-            "URI::Template" : "0.16",
-            "perl" : "v5.6.1"
+            "Test::Pod" : "1.41"
          }
-      }
-   },
-   "provides" : {
-      "Net::PostcodeNL::WebshopAPI" : {
-         "file" : "lib/Net/PostcodeNL/WebshopAPI.pm",
-         "version" : "0.2"
-      },
-      "Net::PostcodeNL::WebshopAPI::Response" : {
-         "file" : "lib/Net/PostcodeNL/WebshopAPI/Response.pm",
-         "version" : 0
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ]
+      "bugtracker" : {
+         "web" : "https://github.com/pstuifzand/net-postcodenl-webshopapi/issues"
+      },
+      "homepage" : "https://github.com/pstuifzand/net-postcodenl-webshopapi",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/pstuifzand/net-postcodenl-webshopapi.git",
+         "web" : "https://github.com/pstuifzand/net-postcodenl-webshopapi"
+      }
    },
-   "version" : "0.2"
+   "version" : "0.2.0"
 }
+
